@@ -1,0 +1,58 @@
+#can make more of these dynamic if required
+#ES_PATH_LOG=/var/log/elasticsearch
+#ES_PATH_DATA=/var/lib/elasticsearch
+#ES_PATH_WORK=/tmp/elasticsearch
+#ES_PATH_CONF=/etc/elasticsearch
+#ES_CONFIG=/etc/elasticsearch/elasticsearch.yml
+
+#ES_INCLUDE=/usr/share/java/elasticsearch/bin/elasticsearch.in.sh
+#ES_MIN_MEM=256m
+#ES_MAX_MEM=1g
+ES_HEAP_SIZE={{ elasticsearch_heapsize }}
+
+
+ES_HOME=/usr/share/elasticsearch
+
+# Heap Size (defaults to 256m min, 1g max)
+#ES_HEAP_SIZE=2g
+
+# Heap new generation
+#ES_HEAP_NEWSIZE=
+ES_HEAP_SIZE={{ elasticsearch_heapsize }}
+
+# max direct memory
+#ES_DIRECT_SIZE=
+
+# Additional Java OPTS
+#ES_JAVA_OPTS=
+
+# Maximum number of open files
+MAX_OPEN_FILES=65535
+
+# Maximum amount of locked memory
+#MAX_LOCKED_MEMORY=
+# Maximum number of VMA (Virtual Memory Areas) a process can own
+MAX_MAP_COUNT=262144
+
+# Elasticsearch log directory
+LOG_DIR=/var/log/elasticsearch
+
+# Elasticsearch data directory
+DATA_DIR=/var/lib/elasticsearch
+
+# Elasticsearch work directory
+WORK_DIR=/tmp/elasticsearch
+
+# Elasticsearch conf directory
+CONF_DIR=/etc/elasticsearch
+
+# Elasticsearch configuration file (elasticsearch.yml)
+CONF_FILE=/etc/elasticsearch/elasticsearch.yml
+
+# User to run as, change this to a specific elasticsearch user if possible
+# Also make sure, this user can write into the log directories in case you change them
+# This setting only works for the init script, but has to be configured separately for systemd startup
+ES_USER=elasticsearch
+
+# Configure restart on package upgrade (true, every other setting will lead to not restarting)
+#RESTART_ON_UPGRADE=true

@@ -1,0 +1,1 @@
+/Users/angus/vagrant/elastic/Vagrantfile
