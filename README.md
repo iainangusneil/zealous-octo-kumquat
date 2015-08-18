@@ -30,9 +30,6 @@
         $ cd ./zealous-octo-kumquat
     </li>
     <li>
-        $ cd ./zealous-octo-kumquat
-    </li>
-    <li>
         $ vagrant up
     </li>
     <li>
