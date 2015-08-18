@@ -11,5 +11,8 @@
     - name: write the elasticsearch.yml config
       template: src=elasticsearch.yml dest=/etc/elasticsearch/elasticsearch.yml mode=644 owner=root group=root
 
+    - name: write the elasticsearch sysconfig file used to set heap size
+      template: src=elasticsearch-sysconfig dest=/etc/sysconfig/elasticsearch mode=644 owner=root group=root
+
     - name: enabling elasticsearch on boot and start
       service: name=elasticsearch enabled=yes state=started
