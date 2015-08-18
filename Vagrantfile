@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 		vb.memory = 2048
 		vb.cpus = 2
 		
-		# turn off usb in virtual box incase it could be handled
+		# turn off usb in virtual box incase it doesn't play well with additions
 		vb.customize ["modifyvm", :id, "--usb", "off"]
 		vb.customize ["modifyvm", :id, "--usbehci", "off"]
 
