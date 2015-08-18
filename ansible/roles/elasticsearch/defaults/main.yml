@@ -1,2 +1,3 @@
----
+--- 	#default clustername to not be elasticsearch due to its 'efficient' clustering capbabilites
+    elasticsearch_clustername: ansibles_elasticsearch
     elasticsearch_heapsize: 1g

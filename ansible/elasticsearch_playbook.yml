@@ -5,4 +5,5 @@
    - { role: ansiblebit.oracle-java, oracle_java_set_as_default: yes }
    - elasticsearch
   vars:
+    elasticsearch_clustername: skyscanner_assignment
     elasticsearch_heapsize: 2g
