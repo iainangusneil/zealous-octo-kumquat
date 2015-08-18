@@ -1,5 +1,5 @@
 # zealous-octo-kumquat
-uses Ansible to install elasticsearch on a vagrant box.
+<p>uses Ansible to install elasticsearch on a vagrant box.</p>
 
 <h3>Inventory</h3>
 <ul>
@@ -20,13 +20,23 @@ uses Ansible to install elasticsearch on a vagrant box.
 
 
 
+<h3>Usage<h3>
 
+<ol>
+    <li>
+        $ git clone https://github.com/iainangusneil/zealous-octo-kumquat.git
+    </li>
+    <li>
+        $ cd ./zealous-octo-kumquat
+    </li>
+    <li>
+        $ cd ./zealous-octo-kumquat
+    </li>
+    <li>
+        $ vagrant up
+    </li>
+    <li>
+        $ vagrant provision
+    </li>
 
-Usage:
-$ git clone https://github.com/iainangusneil/zealous-octo-kumquat.git
-
-$ cd ./zealous-octo-kumquat
-
-$ vagrant up
-
-$ vagrant provision
+</ol>
