@@ -20,7 +20,7 @@
 
 
 
-<h3>Usage<h3>
+<h3>Usage</h3>
 
 <ol>
     <li>
