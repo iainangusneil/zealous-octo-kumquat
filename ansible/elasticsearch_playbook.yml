@@ -6,4 +6,4 @@
    - elasticsearch
   vars:
     elasticsearch_clustername: skyscanner_assignment
-    elasticsearch_heapsize: 2g
+    elasticsearch_heapsize: 1g
